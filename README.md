@@ -36,4 +36,4 @@ pm2 list
 
 test run on 
 
-http:localhost:3000/Leaderboard
+http://localhost:3000/Leaderboard

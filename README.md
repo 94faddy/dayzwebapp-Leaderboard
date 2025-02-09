@@ -1,4 +1,4 @@
-This is part of the dayz game I created to show player stats on the website
+## This is part of the dayz game I created to show player stats on the website
 
 First of all you need to have this mods on your server
 https://steamcommunity.com/sharedfiles/filedetails/?id=1758815806&searchtext=leaderboards by: QuickZ
@@ -12,17 +12,17 @@ const FTP_PORT = 21; // ftp you port
 const FTP_USER = "dayz"; // ftp you username
 const FTP_PASS = "Aa123456";  // ftp you password
   ```
-!!Note
+## !!Note
 
-Please set ftp path to !Server-Profiles\Leaderboard
+ Please set ftp path to !Server-Profiles\Leaderboard
 My ftp example is C:\Program Files (x86)\Steam\steamapps\common\DayZServer\!Server-Profiles\Leaderboard
 to be able to read the file Stats-765611xxxxxxxxxxx.json. Set ftp permission to read/write. Please test your ftp before configuring in server.js.
 
 
-*install node v16.20.0*
+## install node v16.20.0
 https://nodejs.org/en/blog/release/v16.20.0
 
-*install npm command*
+## install npm command
   ```
 1. npm install
 2. npm install -g pm2
@@ -38,4 +38,4 @@ pm2 list
 
 test run on 
 
-http://localhost:3000/Leaderboard
+## http://localhost:3000/Leaderboard

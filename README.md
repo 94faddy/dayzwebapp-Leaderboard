@@ -29,6 +29,9 @@ https://nodejs.org/en/blog/release/v16.20.0
 3. pm2 start server.js --name dayzwebapp
 
 *other command* 
+pm2 stop all
+pm2 delete all
+pm2 flush
 pm2 logs
 pm2 reload all
 pm2 start all

@@ -1,5 +1,7 @@
 ## This is part of the dayz game I created to show player stats on the website
 
+DEMO: https://dayz.phywizard.com/leaderboard
+
 First of all you need to have this mods on your server
 https://steamcommunity.com/sharedfiles/filedetails/?id=1758815806&searchtext=leaderboards by: QuickZ
 

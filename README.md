@@ -7,7 +7,7 @@ go edit in server.js with notepad++ or vscode or you programs
   ```
 const app = express();
 const PORT = 3000; // change port webserver other you need
-const FTP_HOST = "103.253.74.7"; //  ftp you ip or hostname  
+const FTP_HOST = "127.0.0.1"; //  ftp you ip or hostname  
 const FTP_PORT = 21; // ftp you port 
 const FTP_USER = "dayz"; // ftp you username
 const FTP_PASS = "Aa123456";  // ftp you password
@@ -39,3 +39,5 @@ pm2 list
 test run on 
 
 ## http://localhost:3000/Leaderboard
+
+Contact me: https://t.me/j0nsz

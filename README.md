@@ -20,6 +20,28 @@ const FTP_PASS = "Aa123456";  // ftp you password
 My ftp example is C:\Program Files (x86)\Steam\steamapps\common\DayZServer\!Server-Profiles\Leaderboard
 to be able to read the file Stats-765611xxxxxxxxxxx.json. Set ftp permission to read/write. Please test your ftp before configuring in server.js.
 
+json string example
+```
+{
+    "deaths": [],
+    "kills": [],
+    "animalsKilled": [],
+    "name": "jonnoy",
+    "lastTimeSeen": "2025-2-9 18:42:7",
+    "deathsToZCount": 0,
+    "deathsToNaturalCauseCount": 0,
+    "deathsToPlayerCount": 0,
+    "deathsToAnimalCount": 0,
+    "suicideCount": 0,
+    "longestShot": 811,
+    "zKilled": 20,
+    "timeSurvived": 18326,
+    "distTrav": 65111
+}
+```
+Converted Value
+https://dz-preview.phywizard.com/data
+
 
 ## install node v16.20.0
 https://nodejs.org/en/blog/release/v16.20.0

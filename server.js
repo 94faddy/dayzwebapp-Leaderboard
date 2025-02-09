@@ -18,8 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 
 async function fetchFTPData() {
     const client = new ftp.Client();
-    client.ftp.verbose = true;  // Enable for debugging
-
+    client.ftp.verbose = true;
     try {
         await client.access({
             host: FTP_HOST,
@@ -39,10 +38,15 @@ async function fetchFTPData() {
                     await client.downloadTo(writableBuffer, file.name);
                     const fileContent = writableBuffer.getContentsAsString("utf8");
 
-                    // Validate and parse JSON
                     if (fileContent && fileContent.trim().length > 0) {
                         try {
                             let jsonData = JSON.parse(fileContent);
+
+                            // Convert distance before sending
+                            let km = Math.floor(jsonData.distTrav / 1000);
+                            let meters = jsonData.distTrav % 1000;
+                            jsonData.distTravFormatted = `${km} km ${meters} m`;
+
                             statsData.push(jsonData);
                         } catch (jsonError) {
                             console.error(`JSON Parse Error in ${file.name}:`, jsonError);
@@ -92,3 +96,4 @@ app.get("/leaderboard", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+
